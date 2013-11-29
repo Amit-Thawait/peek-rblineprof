@@ -21,6 +21,7 @@ You can also drill down to only certain parts of your codebase like:
 
 Add this line to your application's Gemfile:
 
+    gem 'peek'
     gem 'peek-rblineprof'
 
 And then execute:
@@ -29,6 +30,7 @@ And then execute:
 
 Or install it yourself as:
 
+    $ gem install peek
     $ gem install peek-rblineprof
 
 ## Usage
@@ -54,6 +56,11 @@ CoffeeScript:
 #= require peek
 #= require peek/views/rblineprof
 ```
+
+Add the following in `body` tag of your main layout (`application.html.erb`):
+
+    <%= render 'peek/bar' %>
+
 
 ## Integration with pygments.rb
 
